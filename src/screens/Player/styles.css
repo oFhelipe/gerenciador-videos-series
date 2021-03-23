@@ -1,0 +1,13 @@
+#player-container {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    background-color: #000;
+}
+
+#player-container video {
+    width: 100%;
+    height: auto;
+    outline: none;
+    z-index: 5;
+}

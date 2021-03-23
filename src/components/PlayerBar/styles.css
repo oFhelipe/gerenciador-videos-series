@@ -1,0 +1,115 @@
+ .player-bar{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    height: 160px;
+    z-index: 10;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.65) 87.5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    transition: visibility 0s linear;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    transition: visibility 0s linear;
+}
+
+
+.player-bar:hover {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+ .player-bar #player-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: relative;
+}
+
+ .player-bar #player-buttons-container .mid-player-icons{
+    margin-right: 5%;
+ }
+
+ .player-bar #player-buttons-container .player-change-direction-space-itens{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     max-height: 100%;
+     max-width: 100%;
+ }
+
+ .player-bar #player-buttons-container .player-change-direction-space-itens .player-button:last-child{
+    margin-left: 8px;
+ }
+ 
+ .player-bar #player-buttons-container .player-button {
+    max-height: 40px;
+    max-width: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#volume-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#volume-container #volume-box{
+    position: absolute;
+    width: 56px;
+    height: 136px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    margin-top: -80px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#volume-container:hover #volume-box {
+    transition: opacity 0.3s linear;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#volume-container:hover #volume-box input {
+    transform: rotate(-90deg);
+    width: 120px;
+}
+
+.player-bar #player-buttons-container p#time-text {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+ .player-bar #player-buttons-container .player-button:hover {
+    background-color: #191919;
+}
+
+ .player-bar #player-buttons-container .player-button img {
+    height: 100%;
+    width: 100%;
+}

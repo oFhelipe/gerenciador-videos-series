@@ -1,0 +1,100 @@
+#home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--secondary)
+}
+
+#home-container #title-box {
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 25%;
+    margin-top: 32px;
+}
+
+#home-container #title-box p {
+    color: var(--light);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#home-container #library-container {
+    display: flex;
+}
+
+#home-container #library-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 64px;
+    display: flex;
+    flex: 1;
+}
+
+#home-container #library-container #album-box {
+    height: 206px;
+    width: 256px;
+    background-color: var(--secondary-light);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.75);
+}
+
+#home-container #library-container #album-box img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#home-container #library-container #album-box div p {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-align: center;
+    margin-right: 16px;
+}
+
+#home-container #library-container #album-box:hover {
+    cursor: pointer;
+    background-color: var(--secondary-dark);
+    transition: background-color 0.5s;
+}
+
+#home-container #library-container #nothing-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#home-container #library-container #nothing-container div {
+    height: 300px;
+    width: 300px;
+}
+
+#home-container #library-container #nothing-container h1 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--light);
+}
+
+#home-container #library-container #nothing-container p {
+    font-family: Roboto;
+    font-size: 16px;
+    color: var(--light);
+    margin-top: 16px;
+}
